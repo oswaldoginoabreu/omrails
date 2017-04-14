@@ -1,59 +1,26 @@
-
-<h1>Welcome to my website</h1>
-
-<h2> I have no idea what I am capable of building with Rails yet! But this is what I would like to be able to build.</h2>
-
-<p> I am currently trying to build a web application for a friend who owns a Pet Store. The idea is to build a tool that calculates employee's base salary + daily commissions.</p>
-
-<p>The groomers at the Pet Store make a base salary + a commission on every pet they groom</p>
-
-<ul>
-	<li>Groomers make $15/hour base salary.</li>
-	<li>This is how the commission is calculated; 50% of the first $300. 60% above $300</li>
-</ul>
-
-<h2>Let's supposed Mattan worked 8 hours a day and generated $700 on grooming.</h2>
-
-<p> 50% of $300 = $150.</p>
-<p> 60% of $400 = $240.</p>
-<p>8 hours of work x $15 base salary = $120 base salary.</p>
-
-<h1> Mattan income for the day is = $150 + $240 + $120 = TOTAL $510</h1>
-
-<h1> This is based on this formula I created today.</h1>
-
-<h2>R = (Revenue)</h2></br>
-
-If (R < or = $300)</br>
-
-x($ amount) = R x 0.5 (50%)</br>
-
-If R > $300</br>
-
-x = 150 + [(R - 300) x 0.6(60%)]</br>
-</h2>
-
-<h2> This is the formula in action</h2>
-
-<h3></br>
-Example: Mattan made $700 on grooming services.</br></br>
-
-X = 150 + [($700 - 300) x 0.6]</br>
-X = 150 + [($400) x 0.6]</br>
-X = 150 + ($240)</br>
-X = $390</br></br>
-
-Mattan made $390 on commission for the day.</br></br>
-
-Checking...</br></br>
-
-50% of $300 = 150</br>
-60% of $400 = 240</br>
-
-$150 + $240 = $390 on commission</br>
-
-Then... + 120$ (8 hours of work for 15$)</br></br>
-
-Mattan makes $ 510 for the day on base salary + commission.</br>	
-</h3>
-
+<div class="jumbotron jumbotron-home">
+    <div class="container">
+        <h1>Welcome to my website!</h1>
+        <p>This is a template for a simple marketing or informational website. It includes a large callout called a jumbotron and three supporting pieces of content. Use it as a starting point to create something more unique.</p>
+        <%= link_to "Learn more »", "#", class: "btn btn-primary btn-lg" %> 
+    </div>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col-md-4">
+            <h2>Heading</h2>
+            <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+            <p><%= link_to "View details", "#", class: "btn btn-secondary" %></p>
+        </div>
+        <div class="col-md-4">
+            <h2>Heading</h2>
+            <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+            <p><%= link_to "View details", "#", class: "btn btn-secondary" %></p>
+        </div>
+        <div class="col-md-4">
+            <h2>Heading</h2>
+            <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+            <p><%= link_to "View details", "#", class: "btn btn-secondary" %></p>
+        </div>
+    </div>
+</div>
